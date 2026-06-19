@@ -175,12 +175,30 @@ export default function WelcomeScreen({ onComplete }: { onComplete: () => void }
           {/* CTA Button to Enter Website */}
           <motion.button
             initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 1.5 }}
+            animate={{ 
+              opacity: 1, 
+              scale: 1,
+              boxShadow: [
+                "0 0 8px rgba(201, 168, 76, 0.2)",
+                "0 0 20px rgba(201, 168, 76, 0.5)",
+                "0 0 8px rgba(201, 168, 76, 0.2)"
+              ],
+              textShadow: [
+                "0 0 2px rgba(232, 213, 163, 0.1)",
+                "0 0 10px rgba(232, 213, 163, 0.7)",
+                "0 0 2px rgba(232, 213, 163, 0.1)"
+              ]
+            }}
+            transition={{ 
+              opacity: { duration: 1, delay: 1.5 },
+              scale: { duration: 1, delay: 1.5 },
+              boxShadow: { duration: 2, repeat: Infinity, ease: 'easeInOut', delay: 1.5 },
+              textShadow: { duration: 2, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }
+            }}
             onClick={handleEnter}
-            className="cta-button mt-4 z-10 px-8 py-3 bg-[rgba(74,14,14,0.4)] border border-[var(--color-gold)] text-[var(--color-gold)] hover:bg-[var(--color-gold)] hover:text-black transition-all duration-300 font-[var(--font-serif)] uppercase tracking-widest text-sm rounded shadow-lg"
+            className="cta-button mt-4 z-10 px-10 py-3 bg-[rgba(74,14,14,0.5)] border border-[var(--color-gold)] text-[var(--color-gold-light)] hover:bg-[var(--color-gold)] hover:text-black transition-colors duration-300 font-[var(--font-serif)] uppercase tracking-widest text-sm rounded shadow-lg"
           >
-            Enter Invitation
+            Click Here
           </motion.button>
         </motion.div>
       )}
