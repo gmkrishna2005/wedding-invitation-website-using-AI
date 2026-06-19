@@ -183,7 +183,7 @@ export function PushkaramSection() {
               Sacred Timing
             </p>
             <p className="font-[var(--font-serif)] text-2xl md:text-3xl text-[var(--color-gold-light)] font-light tracking-wider">
-              2:12 PM – 2:16 PM
+              2:12 AM – 2:16 AM
             </p>
 
             {/* Decorative bottom lotus */}
