@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { GaneshaSilhouette, MandalaPattern, DiyaLamp } from './SVGComponents';
+import { MandalaPattern, DiyaLamp } from './SVGComponents';
 
 export default function WelcomeScreen({ onComplete }: { onComplete: () => void }) {
   const [isVisible, setIsVisible] = useState(true);
@@ -35,14 +35,10 @@ export default function WelcomeScreen({ onComplete }: { onComplete: () => void }
     generateParticles();
   }, [generatePetals, generateParticles]);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsVisible(false);
-      setTimeout(onComplete, 800);
-    }, 4000);
-
-    return () => clearTimeout(timer);
-  }, [onComplete]);
+  const handleEnter = () => {
+    setIsVisible(false);
+    setTimeout(onComplete, 800);
+  };
 
   return (
     <AnimatePresence>
@@ -128,14 +124,18 @@ export default function WelcomeScreen({ onComplete }: { onComplete: () => void }
             <motion.div
               animate={{
                 filter: [
-                  'drop-shadow(0 0 10px rgba(201, 168, 76, 0.4))',
-                  'drop-shadow(0 0 25px rgba(201, 168, 76, 0.7))',
-                  'drop-shadow(0 0 10px rgba(201, 168, 76, 0.4))',
+                  'drop-shadow(0 0 10px rgba(212, 175, 55, 0.4))',
+                  'drop-shadow(0 0 25px rgba(212, 175, 55, 0.7))',
+                  'drop-shadow(0 0 10px rgba(212, 175, 55, 0.4))',
                 ],
               }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <GaneshaSilhouette className="w-32 h-36 md:w-44 md:h-48 text-[var(--color-gold)]" />
+              <img
+                src="/ganesha_gold.png"
+                alt="Antique Gold Lord Ganesha"
+                className="w-36 h-36 md:w-48 md:h-48 object-contain mx-auto"
+              />
             </motion.div>
           </motion.div>
 
@@ -162,7 +162,7 @@ export default function WelcomeScreen({ onComplete }: { onComplete: () => void }
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1.2 }}
-            className="mt-6 text-center z-10 px-4"
+            className="mt-6 text-center z-10 px-4 mb-4"
           >
             <p className="text-[var(--color-gold-light)] font-[var(--font-serif)] text-base md:text-lg italic leading-relaxed">
               With the blessings of Lord Ganesha,
@@ -171,6 +171,17 @@ export default function WelcomeScreen({ onComplete }: { onComplete: () => void }
               we invite you to celebrate our wedding.
             </p>
           </motion.div>
+
+          {/* CTA Button to Enter Website */}
+          <motion.button
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 1.5 }}
+            onClick={handleEnter}
+            className="cta-button mt-4 z-10 px-8 py-3 bg-[rgba(74,14,14,0.4)] border border-[var(--color-gold)] text-[var(--color-gold)] hover:bg-[var(--color-gold)] hover:text-black transition-all duration-300 font-[var(--font-serif)] uppercase tracking-widest text-sm rounded shadow-lg"
+          >
+            Enter Invitation
+          </motion.button>
         </motion.div>
       )}
     </AnimatePresence>
