@@ -129,11 +129,11 @@ export function ReceptionSection() {
   );
 }
 
-export function WeddingLunch() {
+export function NaluguSection() {
   return (
     <EventCard
-      id="lunch"
-      heading="Wedding Lunch"
+      id="Nalugu"
+      heading="Nalugu"
       date="01 July 2026"
       details={[
         { label: 'Time', value: '11:00 AM' },
@@ -159,7 +159,7 @@ export function PushkaramSection() {
 
         <FadeUp delay={0.1}>
           <h2 className="font-[var(--font-serif)] text-3xl md:text-5xl text-[var(--color-gold-light)] tracking-[4px] uppercase font-light mb-2">
-            Pushkaram
+            Sumuhurtham
           </h2>
         </FadeUp>
 

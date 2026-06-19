@@ -40,7 +40,7 @@ export default function ContactSection() {
         <FadeUp delay={0.2}>
           <div className="mt-10 p-8 md:p-12 border border-[rgba(201,168,76,0.2)] bg-gradient-to-b from-[rgba(84,46,33,0.1)] to-[rgba(21,14,12,0.8)]">
             <p className="font-[var(--font-serif)] text-xl md:text-2xl text-[var(--color-gold-light)] font-light mb-2">
-              Sri Goli Surendrayya
+              Sri Goli Surendraiah
             </p>
 
             <div className="w-20 h-px bg-gradient-to-r from-transparent via-[var(--color-gold)] to-transparent mx-auto my-6 opacity-40" />

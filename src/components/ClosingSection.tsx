@@ -67,7 +67,7 @@ export default function ClosingSection() {
         <FadeUp delay={0.6}>
           <div className="mt-16 pt-8 border-t border-[rgba(201,168,76,0.1)]">
             <p className="font-[var(--font-serif)] text-xs tracking-[4px] uppercase text-[var(--color-momoshio)]">
-              Jahnavi &amp; Penchalaswamy
+              Jahnavi &amp; Penchala Swamy
             </p>
             <p className="font-[var(--font-serif)] text-xs text-[var(--color-momoshio)] mt-1 tracking-wider">
               02 · 07 · 2026

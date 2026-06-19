@@ -75,11 +75,10 @@ export default function FamilySection() {
           <FadeUp delay={0.1}>
             <FamilyCard
               title="Bride's Family"
-              fatherName="Sri Goli Surendrayya"
-              motherName="Smt. Shailaja"
+              fatherName="Sri Goli Surendraiah"
+              motherName="Smt. Sailaja"
               details={[
                 { label: 'Village', value: 'Mypadu' },
-                { label: 'Mandal', value: 'Indukurpet' },
                 { label: 'District', value: 'Nellore' },
               ]}
             />
@@ -88,10 +87,10 @@ export default function FamilySection() {
           <FadeUp delay={0.2}>
             <FamilyCard
               title="Groom's Family"
-              fatherName="Sri M. Subrahmanyam"
-              motherName="Smt. Padmavathi"
+              fatherName="Sri Akurathi penchaliah(Late)"
+              motherName="Smt. Rajaya Lakshmi"
               details={[
-                { label: 'Village', value: 'Nellore' },
+                { label: 'Village', value: 'Sangam' },
                 { label: 'District', value: 'Nellore' },
               ]}
             />

@@ -62,8 +62,11 @@ export default function InvitationSection() {
 
             <div className="my-8">
               <h3 className="font-[var(--font-script)] text-4xl md:text-5xl text-[var(--color-gold-light)] mb-1">
-                Penchalaswamy M.S.
+                Penchala Swamy
               </h3>
+              <p className="font-[var(--font-serif)] text-sm text-[var(--color-cortez)] tracking-[3px] uppercase">
+                (M.S.)
+              </p>
               <div className="mt-3 space-y-1">
                 <p className="font-[var(--font-serif)] text-sm text-[var(--color-cortez)] tracking-[2px]">
                   Operations Manager
@@ -86,11 +89,11 @@ export default function InvitationSection() {
                 Bride&apos;s Parents
               </p>
               <p className="font-[var(--font-serif)] text-xl md:text-2xl text-[var(--color-gold-light)] font-light">
-                Sri Goli Surendrayya
+                Sri Goli Surendraiah
               </p>
               <p className="font-[var(--font-serif)] text-lg text-[var(--color-gold)] italic my-1">&amp;</p>
               <p className="font-[var(--font-serif)] text-xl md:text-2xl text-[var(--color-gold-light)] font-light">
-                Smt. Shailaja
+                Smt. Sailaja
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@ import { useState } from 'react';
 import WelcomeScreen from '@/components/WelcomeScreen';
 import HeroSection from '@/components/HeroSection';
 import InvitationSection from '@/components/InvitationSection';
-import { WeddingCeremony, ReceptionSection, WeddingLunch, PushkaramSection } from '@/components/EventSections';
+import { WeddingCeremony, ReceptionSection, NaluguSection, PushkaramSection } from '@/components/EventSections';
 import VenueSection from '@/components/VenueSection';
 import FamilySection from '@/components/FamilySection';
 import ContactSection from '@/components/ContactSection';
@@ -56,7 +56,7 @@ export default function Home() {
             <GoldDivider wide />
           </div>
 
-          <WeddingLunch />
+          <NaluguSection />
 
           <div className="py-4">
             <GoldDivider wide />
