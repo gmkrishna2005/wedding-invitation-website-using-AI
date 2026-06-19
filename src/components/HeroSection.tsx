@@ -69,7 +69,7 @@ export default function HeroSection() {
           transition={{ duration: 1.2, delay: 0.4 }}
           className="font-[var(--font-script)] text-5xl md:text-7xl lg:text-8xl text-[var(--color-gold-light)] mb-10 tracking-wide"
         >
-          Penchalaswamy
+          Penchala Swamy
         </motion.h1>
 
         {/* Date */}
