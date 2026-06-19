@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Indian Wedding",
     "Hindu Wedding",
     "Nellore",
-    "Wedding Invitation",
+    "Nalugu",
   ],
   openGraph: {
     title: "Jahnavi & Penchalaswamy Wedding",
