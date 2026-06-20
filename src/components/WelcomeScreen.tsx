@@ -146,7 +146,7 @@ export default function WelcomeScreen({ onComplete }: { onComplete: () => void }
             transition={{ duration: 1, delay: 0.5 }}
             className="mt-6 text-xl md:text-2xl font-[var(--font-serif)] text-[var(--color-gold)] tracking-widest z-10"
           >
-            श्री गणेशाय नमः
+            శ్రీ గణేశాయ నమః
           </motion.p>
 
           {/* Divider */}
