@@ -87,7 +87,7 @@ export default function FamilySection() {
           <FadeUp delay={0.2}>
             <FamilyCard
               title="Groom's Family"
-              fatherName="Sri Akurathi penchaliah(Late)"
+              fatherName="Sri Akurathi Penchaliah(Late)"
               motherName="Smt. Rajaya Lakshmi"
               details={[
                 { label: 'Village', value: 'Sangam' },
