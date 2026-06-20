@@ -103,7 +103,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 1.2 }}
           className="font-[var(--font-serif)] text-base md:text-lg text-[var(--color-cortez)] italic tracking-wide max-w-xl mx-auto leading-relaxed"
         >
-          वक्रतुंड महाकाय सूर्यकोटि समप्रभ।
+         వక్రతుణ్డ మహాకాయ సురకోటి సమప్రభా ॥
         </motion.p>
 
         {/* CTA */}
